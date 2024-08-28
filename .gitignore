@@ -1,0 +1,3 @@
+.streamlit/secret.toml
+.streamlit/config.toml
+.venv
