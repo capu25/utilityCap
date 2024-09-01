@@ -6,6 +6,7 @@ from forms.contact import contact_form
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "docs" / "curriculumCapDef.pdf"
+EMAIL = "antonio.pio25a@gmail.com"
 
 # --- Load CSS & CV file ---
 with open(css_file) as f:
@@ -44,6 +45,7 @@ with col2:
             mime="application/octotet-stream",
         ):
             st.balloons()
+st.write("📬", EMAIL)
 
 st.write("---")
 

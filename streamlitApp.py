@@ -1,4 +1,14 @@
+from pathlib import Path
+
 import streamlit as st
+
+# --- Path Settings ---
+current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
+css_file = current_dir / "mainStyle.css"
+
+# --- Load CSS ---
+with open(css_file) as f:
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
 # --- Page Setup ---
 aboutPage = st.Page(
