@@ -10,7 +10,7 @@ a {
 
 a:hover {
     color: #d33682 !important;
-    text-decorationi: none;
+    text-decoration: none;
 }
 
 ul {list-style-type: none;}

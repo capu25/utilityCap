@@ -28,14 +28,19 @@ project_2_page = st.Page(
     icon=":material/smart_toy:",
 )
 project_3_page = st.Page(
-page="views/imageEditor.py",
+    page="views/imageEditor.py",
     title="Image Editor",
     icon=":material/image:",
 )
 project_4_page = st.Page(
-page="views/pdfScraper.py",
+    page="views/pdfScraper.py",
     title="PDFs Scraper",
     icon=":material/description:",
+)
+project_5_page = st.Page(
+    page="views/bgRemover.py",
+    title="BackGround Remover",
+    icon=":material/background_replace:"
 )
 
 # --- Navigation Setup ---
@@ -45,9 +50,8 @@ page="views/pdfScraper.py",
 pg = st.navigation(
     {
         "": [aboutPage],
-        "Tool utili:": [],
         "Data manipulation": [project_1_page, project_4_page],
-        "Utility": [project_3_page],
+        "Utility": [project_3_page, project_5_page],
         "Dummy": [project_2_page]
     }
 )
