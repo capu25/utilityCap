@@ -27,7 +27,7 @@ def show_contact_form():
 # --- Hero Session ---
 col1, col2 = st.columns(2, gap="small") #vertical_alignment="center"
 with col1:
-    st.image("assets/profileImage.png", width=280)
+    st.image("assets/fixed.png", width=280)
 with col2:
     st.title("Antonio Pio Caputo", anchor=False)
     st.write(
@@ -45,7 +45,14 @@ with col2:
             mime="application/octotet-stream",
         ):
             st.balloons()
-st.write("📬", EMAIL)
+
+#st.write("📬", EMAIL)
+st.markdown(f"""
+    <div style="margin-left: 30px; margin-bottom:10px;">
+        📬 <a href="mailto:{EMAIL}">{EMAIL}</a>
+    </div>
+    """, unsafe_allow_html=True)
+
 
 st.write("---")
 
